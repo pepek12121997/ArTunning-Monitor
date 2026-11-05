@@ -224,7 +224,7 @@ private fun RpmHeroCard(
     afrBand: Int?,
 ) {
     Card(
-        shape = RoundedCornerShape(NomadCardRadius),
+        shape = RoundedCornerShape(16.dp),
         colors = CardDefaults.cardColors(
             containerColor = MaterialTheme.colorScheme.surface,
         ),
