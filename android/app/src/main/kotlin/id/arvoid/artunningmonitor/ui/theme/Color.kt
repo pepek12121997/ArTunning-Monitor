@@ -1,6 +1,7 @@
 package id.arvoid.artunningmonitor.ui.theme
 
 import androidx.compose.ui.graphics.Color
+import androidx.compose.ui.unit.dp
 
 /*
  * Token design system NomadKit — sumber: docs/design/nomadkit.md (DESIGN.md, MIT).
@@ -36,3 +37,5 @@ val OceanLight = Color(0xFF22B8D6)       // Ocean disesuaikan agar kontras di bg
 val ForestLight = Color(0xFF2E9E63)      // Forest disesuaikan (success di bg gelap)
 val WarningAmberLight = Color(0xFFFBBF24)
 val ErrorRedLight = Color(0xFFF87171)
+// NomadKit design token
+val NomadCardRadius = 16.dp
