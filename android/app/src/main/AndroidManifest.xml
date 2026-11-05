@@ -20,6 +20,7 @@
 
     <!-- Foreground service koneksi ECU (widget + Android Auto butuh koneksi tetap hidup) -->
     <uses-permission android:name="android.permission.FOREGROUND_SERVICE" />
+    <uses-permission android:name="android.permission.FOREGROUND_SERVICE_MEDIA_PLAYBACK" />
     <uses-permission android:name="android.permission.FOREGROUND_SERVICE_CONNECTED_DEVICE" />
     <!-- API33+: agar notifikasi persisten tampil (dipakai konteks status koneksi) -->
     <uses-permission android:name="android.permission.POST_NOTIFICATIONS" />
