@@ -9,7 +9,6 @@ import id.arvoid.artunningmonitor.protocol.RuntimeSample
 import id.arvoid.artunningmonitor.protocol.TelemetrySample
 import id.arvoid.artunningmonitor.protocol.TpsCalSample
 import id.arvoid.artunningmonitor.widget.TelemetryWidgetUpdater
-import id.arvoid.artunningmonitor.widget.WidgetSnapshot
 import kotlinx.coroutines.flow.MutableStateFlow
 import kotlinx.coroutines.flow.StateFlow
 import kotlinx.coroutines.flow.asStateFlow
@@ -83,9 +82,8 @@ object EcURepository {
      * supaya widget real-time walau jalur notifikasi belum/ tidak jalan.
      */
     private fun persistAndPushWidget() {
-        val ctx = appContext ?: return
-        WidgetSnapshot.write(ctx, _state.value)
-        TelemetryWidgetUpdater.updateAll(ctx)
+    val ctx = appContext ?: return
+    TelemetryWidgetUpdater.updateAll(ctx)
     }
 
     // ---------------------------------------------------------------- tulis (service)
